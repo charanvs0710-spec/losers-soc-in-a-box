@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOC-in-a-Box | Reports</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div>
+            <h1>🛡️ SOC-in-a-Box</h1>
+            <p>Security Operations Center</p>
+        </div>
+
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <main class="dashboard">
+
+        <h2>Security Reports</h2>
+
+        <p class="dashboard-subtitle">
+            Security activity and incident reporting
+        </p>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <span>Total Events</span>
+                <strong id="totalEvents">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Normal Events</span>
+                <strong id="normalEvents">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Suspicious Events</span>
+                <strong id="suspiciousEvents">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Total Alerts</span>
+                <strong id="totalAlerts">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>High Severity</span>
+                <strong id="highAlerts">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Critical Alerts</span>
+                <strong id="criticalAlerts">0</strong>
+            </div>
+
+        </section>
+
+        <section class="panel">
+
+            <h3>Detection Summary</h3>
+
+            <div id="detectionSummary">
+                Loading report data...
+            </div>
+
+        </section>
+
+        <br>
+
+        <section class="panel">
+
+            <h3>Incident History</h3>
+
+            <div id="incidentHistory">
+                Loading incident history...
+            </div>
+
+        </section>
+
+        <br>
+
+        <button id="generateReport">
+            Generate Report
+        </button>
+
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/reports.js"></script>
+
+</body>
+
+</html>

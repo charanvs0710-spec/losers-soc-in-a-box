@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOC-in-a-Box | Alerts</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/alerts.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div>
+            <h1>🛡️ SOC-in-a-Box</h1>
+            <p>Security Operations Center</p>
+        </div>
+
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <main class="dashboard">
+
+        <h2>Security Alerts</h2>
+
+        <p class="dashboard-subtitle">
+            Monitor suspicious and high-risk security activity
+        </p>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Alert ID</th>
+                        <th>Alert Type</th>
+                        <th>Severity</th>
+                        <th>Username</th>
+                        <th>IP Address</th>
+                        <th>Reason</th>
+                        <th>Timestamp</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="alertsTableBody">
+
+                    <tr>
+                        <td colspan="8">
+                            Loading security alerts...
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/alerts.js"></script>
+
+</body>
+
+</html>

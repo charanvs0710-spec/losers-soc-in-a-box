@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOC-in-a-Box | Events</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div>
+            <h1>🛡️ SOC-in-a-Box</h1>
+            <p>Security Operations Center</p>
+        </div>
+
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <main class="dashboard">
+
+        <h2>Security Events</h2>
+
+        <p class="dashboard-subtitle">
+            Monitor and classify incoming security events
+        </p>
+
+        <div class="filters">
+
+            <button onclick="filterEvents('ALL')">All</button>
+
+            <button onclick="filterEvents('NORMAL')">
+                Normal
+            </button>
+
+            <button onclick="filterEvents('SUSPICIOUS')">
+                Suspicious
+            </button>
+
+            <button onclick="filterEvents('HIGH')">
+                High Risk
+            </button>
+
+        </div>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>Event</th>
+                        <th>Username</th>
+                        <th>IP Address</th>
+                        <th>Classification</th>
+                        <th>Severity</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="eventsTableBody">
+
+                    <tr>
+                        <td colspan="7">
+                            Loading security events...
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/events.js"></script>
+
+</body>
+
+</html>

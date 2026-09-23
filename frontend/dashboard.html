@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOC-in-a-Box | Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div>
+            <h1>🛡️ SOC-in-a-Box</h1>
+            <p>Security Operations Center</p>
+        </div>
+
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <main class="dashboard">
+
+        <h2>Security Dashboard</h2>
+        <p class="dashboard-subtitle">
+            Real-time overview of security events and alerts
+        </p>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <span>Total Events</span>
+                <strong id="totalEvents">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Suspicious Events</span>
+                <strong id="suspiciousEvents">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Active Alerts</span>
+                <strong id="activeAlerts">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>High/Critical Alerts</span>
+                <strong id="highAlerts">0</strong>
+            </div>
+
+        </section>
+
+        <section class="dashboard-grid">
+
+            <div class="panel">
+                <h3>Recent Security Events</h3>
+
+                <div id="recentEvents">
+                    <p>No security events available.</p>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h3>Recent Alerts</h3>
+
+                <div id="recentAlerts">
+                    <p>No active alerts available.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>

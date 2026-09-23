@@ -97,3 +97,33 @@ body {
     color: #38bdf8;
     text-decoration: none;
 }
+/* Reports Page */
+
+#generateReport {
+    margin-top: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #0284c7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#generateReport:hover {
+    background: #0369a1;
+}
+
+#detectionSummary,
+#incidentHistory {
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+.report-item {
+    padding: 12px;
+    margin-bottom: 8px;
+    background: #07111f;
+    border: 1px solid #1e4058;
+    border-radius: 6px;
+}
