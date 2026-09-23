@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2026-09-23T10:00:00",
+    "event": "LOGIN_SUCCESS",
+    "username": "admin",
+    "ip": "10.0.0.5"
+  },
+  {
+    "timestamp": "2026-09-23T10:02:00",
+    "event": "LOGIN_SUCCESS",
+    "username": "ramraj",
+    "ip": "10.0.0.10"
+  }
+]
