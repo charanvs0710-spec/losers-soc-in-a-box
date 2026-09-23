@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOC-in-a-Box | Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="login-page">
+
+        <div class="login-card">
+
+            <div class="logo">
+                🛡️
+            </div>
+
+            <h1>SOC-in-a-Box</h1>
+
+            <p class="subtitle">
+                Security Operations Center
+            </p>
+
+            <form id="loginForm">
+
+                <label for="username">
+                    Username / Email
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter username or email"
+                    required
+                >
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password"
+                    required
+                >
+
+                <p id="errorMessage"></p>
+
+                <button type="submit">
+                    LOGIN
+                </button>
+
+            </form>
+
+            <p class="register-text">
+                Don't have an account?
+                <a href="register.html">Create Account</a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>
